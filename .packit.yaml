@@ -1,0 +1,27 @@
+# See the documentation for more information:
+# https://packit.dev/docs/configuration/
+
+specfile_path: orcasayshelloworld.spec
+
+files_to_sync:
+ - orcasayshelloworld.spec
+ - .packit.yaml
+
+jobs:
+- job: copr_build
+  trigger: pull_request
+  targets: [fedora-stable]
+
+- job: tests
+  trigger: pull_request
+  targets: [fedora-stable]
+
+- job: propose_downstream
+  trigger: release
+  dist_git_branches:
+    - fedora-all
+
+# name in upstream package repository or registry (e.g. in PyPI)
+upstream_package_name: orcasayshelloworld
+# downstream (Fedora) RPM package name
+downstream_package_name: orcasayshelloworld
