@@ -1,9 +1,10 @@
 Name:		orcasayshelloworld
 Version:	v0.1
-Release:        1.20250715113101167490.main.1.g3de845c%{?dist}
+Release:        1.20250715115031945509.main.2.g9e24986%{?dist}
 Summary:        A simple hello world script
 URL:		https://github.com/betulependule/orcasayshelloworld
 Source0:        orcasayshelloworld-v0.1.tar.gz
+BuildArch:	noarch
 License:	MIT
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
@@ -25,6 +26,14 @@ hello world, what did you expect?
 %{python3_sitelib}/*
 
 %changelog
+* Tue Jul 15 2025 Alzbeta Kucerova <akucerov@redhat.com> - v0.1-1.20250715115031945509.main.2.g9e24986
+- Try to trigger copr-build again (Alzbeta Kucerova)
+- Fix some issues, try to trigger copr build (Alzbeta Kucerova)
+
+* Tue Jul 15 2025 Alzbeta Kucerova <akucerov@redhat.com> - v0.1-1.20250715115001353042.main.2.g9e24986
+- Try to trigger copr-build again (Alzbeta Kucerova)
+- Fix some issues, try to trigger copr build (Alzbeta Kucerova)
+
 * Tue Jul 15 2025 Alzbeta Kucerova <akucerov@redhat.com> - v0.1-1.20250715113101167490.main.1.g3de845c
 - Fix some issues, try to trigger copr build (Alzbeta Kucerova)
 
