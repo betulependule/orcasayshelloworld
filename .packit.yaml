@@ -1,6 +1,7 @@
 # See the documentation for more information:
 # https://packit.dev/docs/configuration/
 
+packit_instances: ["prod", "stg"]
 specfile_path: orcasayshelloworld.spec
 
 files_to_sync:
